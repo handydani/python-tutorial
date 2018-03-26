@@ -46,9 +46,9 @@ This is pretty cool but we want to be able to open whatever instagram we feel li
 ```python
 import webbrowser, sys, pyperclip
 
-if len(sys.argv) > 1
+if len(sys.argv) > 1:
     address = ' '.join(sys.argv[1:])
-else
+else:
     address = pyperclip.paste()
 
 webbrowser.open('https://www.instagram.com/' + address)
